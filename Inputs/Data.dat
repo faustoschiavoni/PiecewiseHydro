@@ -1,0 +1,15 @@
+param: Giorni := 365;                 #serve per indicizzare Duration_Curve, Hgross, Hnet, Qn, Qp...
+param: DMV := 0.50;                   #deflusso minimo vitale
+param: Eta_aux := 0.88464;            #rendimento tot comprendente ausiliari e disponibilità dell'impianto
+param: Revenues_Specific := 81.43;    #ricavi
+param: Perc_OeM := 0.02;              #percentuale di costo di investimento che si spende in O&M
+param: Inv_Cost := 4325000;           #Costo di Investimento Iniziale I_0 di opere civili [€]
+param: Ammortization := 20;           #anni di ammortamento
+param: Taxes := 0.28;                 #percentuale tasse (irap + ires)
+param: Discount_Rate := 0.04;         #tasso di attualizzazione
+param: Lifetime := 30;                #anni di funzionamento
+param: Coeff := 0.002326;             #Coefficiente che raccoglie tutte le perdite concentrate e distribuite (che moltiplica la Portata totale)
+
+param: Nmax := 1;                     #Numero turbine massimo tra cui fare la ricerca dell'ottimo
+param: Portata_Nom := 20.0;           #Portata Nominale turbinata da per ogni tipo di turbina --> deve essere un "float" (dopo l'indice)!!
+param: Cost_turb:= 605897;            #Costo specifico della turbina [€]
